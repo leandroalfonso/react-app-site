@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    top: 0;
+    box-sizing: border-box;
+}
+.container-card{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+   margin-top: 20px;
+    height: auto;
+
+}
+.card{
+width: 220px;
+height: 250px;
+border-radius: 2px;
+
+margin-right: 20px;
+display: flex;
+flex-direction: column;
+padding: 3px 3px;
+background-color: #fff;
+
+
+}
+.card:hover{
+    
+    transition: 500ms linear; 
+  
+  transform: scale(1.1);
+  
+  
+  
+}
+.card img{
+    width: 100%;
+    height: 80%;
+}
+.card .content{
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 5px;
+    padding: 5px;
+    color: #302d2d;
+}
+.card-modal img{
+    width: 500px;
+    height: 300px;
+}
+
+
+
+
+.modal{
+    width: 100%;
+    height: 1600px;
+    background-color:#fff;
+   position: absolute;
+    visibility: visible;
+  
+    display: flex;
+   
+    top: 80px;
+
+   
+
+   
+}
+.modal.open{
+    visibility: hidden;
+   
+}
+
+.card-modal{
+    padding: 30px;
+   
+  
+}
+.modal .btnClose{
+    width: 100%;
+    height: 20px;
+    
+    top: 0;
+}
+.quant{
+    width: 33%;
+    height: 80vh;
+    margin-top: 20px;
+
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+   
+}
+@media screen and (max-width: 780px){
+    .modal{
+        width: 100%;
+        height: 100vh;
+        background-color:#fff;
+   
+        visibility: visible;
+      
+       
+        flex-direction: column;
+    
+        top: 10%;
+    
+       
+    
+       
+    }
+    .card-modal img{
+        width: 60%;
+    }
+    .quant{
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+        height: 250px;
+        border-radius: 2px;
+        
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 3px 3px;
+        background-color: #fff;
+        
+        
+        }
+    }
+       
